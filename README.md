@@ -1,4 +1,4 @@
-# EmbedBuddy
+# raybots
 Simple discord bot for sending custom embeds to channels 
 
 ## Setting up
