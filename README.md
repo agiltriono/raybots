@@ -1,78 +1,56 @@
-# raybots
-Simple discord bot for sending custom embeds to channels 
+# 🤖 raybot (Discord Music Bot)
+> raybot is a Discord Music Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
 
-## Setting up
-- Clone this repo using,
-`git clone https://github.com/ipmanlk/EmbedBuddyBot.git`
-- Run `npm install` to install all dependencies.
-- Edit `config.json` file inside the config directory.
-- Run `npm start` or `node server.js` to start the bot.
+add the bot to your server (COMING SOON)
 
-## Customization
-- `config` directory contains all configuration files.
+## 📝 Features & Commands
 
-### Config files
-- `config.json` - Basic options such as bot token & allowed roles.
-- `commands.json` - Custom commands with their responses.
-- `responses.json` - Responses used inside the code.  
-  ***ex,*** *Response to send when user doesn't have the permission.*
+> Note: The default prefix is 'ray!'
 
-## How to use
-### Command Syntax
-`[PREFIX] <title> | <description> | <channel name> | <color> | <thumbnail image url> | <author name> | <author image url> | <author link>`
+* 🎶 Play music from YouTube via url
 
-#### Basic usage
-- Everything except `<title>` is optional.
-- You need to provide the arguments in the same order as above, separated by the `|` character.  *(You can change this character)*.
-- You can skip providing arguments using a `space`. ***(Check out the examples below)***
+`/play https://www.youtube.com/watch?v=GLvohMXgcBo`
 
-### Rich Command Syntax
-`[PREFIX] ti~<value> | de~<value> | ch~<value>  | co~<value> | th~<value> | an~<value> | ai~<value> | al~<value>`
+* 🔎 Play music from YouTube via search query
 
-#### Keys explained
-| Key|      Meaning     |
-| :--| :----------------|
-| ti | title            |
-| de | description      |
-| ch | channel name     |
-| co | embed color      |
-| th | thumbnail url    |
-| an | author name      |
-| ai | author image url |
-| al | author link      |
-| im | image url        |
-| ft | footer text      |
-| fi | footer img       |
+`/play under the bridge red hot chili peppers`
 
-#### Rich Command usage
-- Rich commands allow you to send arguments in any order.
-- It uses `key~value` pairs.
-- Everything except `ti` is optional.
-- You need to provide the arguments using `key~value` pairs, separated by the `|` character.  *(You can change this character)*.
+* 🎶 Play music from Soundcloud via url
 
-### Examples
-***`?embed` is used as the prefix for examples.***
+`/play https://soundcloud.com/blackhorsebrigade/pearl-jam-alive`
 
-1. Send an embed to the current channel.  
-`?embed Test | This is a test`
-  
-2. Send an embed to a channel named example.  
-  `?embed Test | This is a test | example`
-  
-3. Send an embed to a channel named example with the color red.  
- `?embed Test | This is a test | example | #ff0000`  
-  ***`(Use hex color values)`***
+* 🔎 Search and select music to play
 
-4. Send an embed to the current channel with the color red.  
-  `?embed Test | This is a test | | #ff0000`  
-  ***`(Space is used to skip the <channel name> argument)`***
+`/search Pearl Jam`
 
-5. Send an embed to a channel named example using rich commands.  
-  `?embed ti~test | ch~example`
+Reply with song number or numbers seperated by comma that you wish to play
 
-6. Send an embed to a channel named example with the color red using rich commands.  
-  `?embed ti~test | ch~example | co~#ff0000`
-  
-  <a href="https://www.patreon.com/ipmanlk">
-    <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png">
-  </a>
+Examples: `1` or `1,2,3`
+
+* 📃 Play youtube playlists via url
+
+`/playlist https://www.youtube.com/watch?v=YlUKcNNmywk&list=PL5RNCwK3GIO13SR_o57bGJCEmqFAwq82c`
+
+* 🔎 Play youtube playlists via search query
+
+`/playlist linkin park meteora`
+* Now Playing (/np)
+* Queue system (/queue, /q)
+* Loop / Repeat (/loop)
+* Shuffle (/shuffle)
+* Volume control (/volume, /v)
+* Lyrics (/lyrics, /ly)
+* Pause (/pause)
+* Resume (/resume, /r)
+* Skip (/skip, /s)
+* Skip to song # in queue (/skipto, /st)
+* Move a song in the queue (/move, /mv)
+* Remove song # from queue (/remove, /rm)
+* Play an mp3 clip (/clip song.mp3) (put the file in sounds folder)
+* List all clips (/clips)
+* Show ping to Discord API (/ping)
+* Show bot uptime (/uptime)
+* Toggle pruning of bot messages (/pruning)
+* Help (/help, /h)
+* Command Handler from [discordjs.guide](https://discordjs.guide/)
+* Media Controls via Reactions

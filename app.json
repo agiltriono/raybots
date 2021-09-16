@@ -1,0 +1,7 @@
+{
+  "name": "raybots",
+  "description": "🤖 Discord Music Bot built with discord.js",
+  "repository": "https://github.com/agiltriono/raybots",
+  "logo": "https://cdn.discordapp.com/avatars/864434308302635009/f4a88174b8e30e3f46ce833baf32525f.png",
+  "keywords": ["discord", "discordjs", "music", "bot"]
+}
