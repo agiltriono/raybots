@@ -1,0 +1,166 @@
+{
+  "clip": {
+    "description": "Main kan klip suara",
+    "usagesReply": "Penggunaan: {prefix}clip <name>",
+    "errorQueue": "Tidak dapat memutar klip karena ada antrian aktif.",
+    "errorNotChannel": "Anda harus bergabung dengan saluran suara terlebih dahulu!"
+  },
+  "clips": {
+    "description": "Daftar semua klip"
+  },
+  "help": {
+    "description": "Tampilkan semua perintah dan deskripsi",
+    "embedTitle": "{botname} Bantuan",
+    "embedDescription": "Daftar semua perintah"
+  },
+  "invite": {
+    "description": "Kirim tautan undangan bot"
+  },
+  "loop": {
+    "description": "Alihkan lingkaran musik",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "result": "Putar ulang sekarang {loop}"
+  },
+  "lyrics": {
+    "description": "Dapatkan lirik untuk lagu yang sedang diputar",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "lyricsNotFound": "Tidak ditemukan lirik untuk {title}.",
+    "embedTitle": "{title} - Lirik"
+  },
+  "move": {
+    "description": "Pindahkan lagu dalam antrian",
+    "errorNotQueue": "Tidak ada antrian.",
+    "usagesReply": "Penggunaan: {prefix}move <Queue Number>",
+    "result": "<@{author}> 🚚 dipindahkan **{title}** ke {index} dalam antrian."
+  },
+  "nowplaying": {
+    "description": "Tampilkan lagu yang sedang diputar",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "embedTitle": "Sedang diputar",
+    "live": " ◉ LIVE",
+    "timeRemaining": "Waktu yang tersisa: {time}"
+  },
+  "pause": {
+    "description": "Jeda musik yang sedang diputar",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "result": "<@{author}> ⏸ menjeda musik."
+  },
+  "ping": {
+    "description": "Tunjukkan ping rata-rata bot",
+    "result": "📈 Rata-rata ping ke API: {ping} ms"
+  },
+  "play": {
+    "description": "Putar lagu dari YouTube atau Soundcloud",
+    "errorNotChannel": "Anda harus bergabung dengan saluran suara terlebih dahulu!",
+    "errorNotInSameChannel": "Anda harus berada di saluran yang sama dengan {user}",
+    "usageReply": "Penggunaan: {prefix}play <YouTube URL | Video name | Soundcloud URL>",
+    "missingPermissionConnect": "Tidak dapat terhubung ke saluran suara, tidak ada izin",
+    "missingPermissionSpeak": "Aku tidak dapat berbicara di saluran suara ini, pastikan Aku memiliki izin yang tepat!",
+    "queueAdded": "✅ **{title}** telah ditambahkan ke antrian oleh <@{author}>",
+    "cantJoinChannel": "Tidak dapat bergabung dengan saluran: {error}",
+    "queueEnded": "❌ Antrian musik berakhir.",
+    "queueError": "Kesalahan: {error}",
+    "startedPlaying": "🎶 Mulai memutar: **{title}** {url}",
+    "skipSong": "<@{author}> ⏩ melewatkan lagu",
+    "pauseSong": "<@{author}> ⏸ menjeda lagu.",
+    "resumeSong": "<@{author}> ▶ melanjutkan lagu!",
+    "unmutedSong": "<@{author}> 🔊 membunyikan lagu!",
+    "mutedSong": "<@{author}> 🔇 membisukan lagu!",
+    "decreasedVolume": "<@{author}> 🔉 mengurangi volumenya, volumenya sekarang {volume}%",
+    "increasedVolume": "<@{author}> 🔊 meningkatkan volumenya, volumenya sekarang {volume}%",
+    "loopSong": "<@{author}> Putar ulang sekarang {loop}",
+    "stopSong": "<@{author}> ⏹ menghentikan lagu!",
+    "leaveChannel": "Meninggalkan saluran suara...",
+    "songNotFound": "Lagu tidak ditemukan"
+  },
+  "playlist": {
+    "description": "Mainkan daftar putar dari youtube",
+    "usagesReply": "Penggunaan: {prefix}playlist <YouTube Playlist URL | Playlist name>",
+    "errorNotChannel": "Anda harus bergabung dengan saluran suara terlebih dahulu!",
+    "errorNotInSameChannel": "Anda harus berada di saluran yang sama dengan {user}",
+    "missingPermissionConnect": "Tidak bisa terhubung, tidak ada izin",
+    "missingPermissionSpeak": "Aku tidak dapat berbicara di saluran suara ini, pastikan Aku memiliki izin yang tepat!",
+    "errorNotFoundPlaylist": "Daftar putar tidak di temukan :(",
+    "fetchingPlaylist": "⌛ mengambil daftar putar...",
+    "playlistCharLimit": "\nDaftar putar lebih besar dari batas karakter...",
+    "startedPlaylist": "<@{author}> memulai daftar putar",
+    "cantJoinChannel": "Tidak dapat terhubung ke saluran suara: {error}"
+  },
+  "pruning": {
+    "description": "Beralih pemangkasan pesan bot",
+    "errorWritingFile": "Terjadi kesalahan saat menulis ke berkas.",
+    "result": "Pemangkasan pesan {result}"
+  },
+  "queue": {
+    "description": "Lihat daftar lagu yang sedang diputar sekarang.",
+    "missingPermissionMessage": "Tidak ada izin untuk mengelola pesan atau menambahkan reaksi",
+    "errorNotQueue": "❌ **Tidak ada yang diputar di server ini**",
+    "currentPage": "Halaman saat ini - ",
+    "embedTitle": "Antrian lagu\n",
+    "embedCurrentSong": "**Lagu saat ini - [{title}]({url})**\n\n{info}"
+  },
+  "remove": {
+    "description": "Hapus lagu dari antrian",
+    "errorNotQueue": "Tidak ada antrian.",
+    "usageReply": "Penggunaan: {prefix}remove <Queue Number>",
+    "result": "<@{author}> ❌ menghapus **{title}** dari antrian."
+  },
+  "resume": {
+    "description": "Lanjutkan memutar musik saat ini",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "resultNotPlaying": "<@{author}> ▶ melanjutkan lagu!",
+    "errorPlaying": "Antrian tidak dijeda."
+  },
+  "search": {
+    "description": "Cari dan pilih video untuk diputar",
+    "usageReply": "Penggunaan: {prefix}{name} <Video name>",
+    "errorAlreadyCollector": "Pengumpul pesan sudah aktif di saluran ini.",
+    "errorNotChannel": "Anda harus bergabung dengan saluran suara terlebih dahulu!",
+    "resultEmbedTtile": "**Balas dengan nomor lagu yang ingin Anda putar**",
+    "resultEmbedDesc": "Hasil untuk: {search}"
+  },
+  "shuffle": {
+    "description": "Acak antrian",
+    "errorNotQueue": "Tidak ada antrian.",
+    "result": "<@{author}> 🔀 mengacak antrian"
+  },
+  "skip": {
+    "description": "Lewati lagu yang sedang diputar",
+    "errorNotQueue": "Tidak ada yang diputar yang bisa aku lewati untuk Anda.",
+    "result": "<@{author}> ⏭ melewatkan lagu"
+  },
+  "skipto": {
+    "description": "Lewati ke nomor antrian yang dipilih",
+    "usageReply": "Penggunaan: {prefix}{name} <Queue Number>",
+    "errorNotQueue": "Tidak ada antrian.",
+    "errorNotValid": "Antriannya hanya {length} panjang lagu!",
+    "result": "<@{author}> ⏭ melewatkan {arg} lagu"
+  },
+  "stop": {
+    "description": "Hentikan lagu",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "result": "<@{author}> ⏹ menghentikan lagu!"
+  },
+  "uptime": {
+    "description": "Periksa waktu aktif",
+    "result": "Waktu aktif: `{days} hari,{hours} jam, {minutes} menit, {seconds} detik`"
+  },
+  "volume": {
+    "description": "Ubah volume musik yang sedang diputar",
+    "errorNotQueue": "Tidak ada yang diputar.",
+    "errorNotChannel": "Anda harus bergabung dengan saluran suara terlebih dahulu!",
+    "currentVolume": "🔊 Volume saat ini adalah: **{volume}%**",
+    "errorNotNumber": "Silakan gunakan nomor untuk mengatur volume.",
+    "errorNotValid": "Silakan gunakan nomor antara 0 - 100.",
+    "result": "Volume disetel ke: **{arg}%**"
+  },
+  "common": {
+    "on": "**hidup**",
+    "off": "**mati**",
+    "enabled": "**diaktifkan**",
+    "disabled": "**dimatikan**",
+    "errorNotChannel": "Kamu harus ada di saluran suara!",
+    "cooldownMessage": "Harap tunggu {time} detik lagi sebelum menggunakan kembali `{name}` perintah.",
+    "errorCommand": "Terjadi kesalahan saat menjalankan perintah itu."
+  }
+}
