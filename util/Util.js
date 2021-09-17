@@ -1,3 +1,4 @@
+require('dotenv').config();
 exports.canModifyQueue = (member) => {
   const { channelID } = member.voice;
   const botChannel = member.guild.voice.channelID;
@@ -17,7 +18,7 @@ try {
   config = null;
 }
 
-exports.TOKEN = config ? config.TOKEN : process.env.TOKEN;
+exports.DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 exports.YOUTUBE_API_KEY = config ? config.YOUTUBE_API_KEY : process.env.YOUTUBE_API_KEY;
 exports.SOUNDCLOUD_CLIENT_ID = config ? config.SOUNDCLOUD_CLIENT_ID : process.env.SOUNDCLOUD_CLIENT_ID;
 exports.PREFIX = (config ? config.PREFIX : process.env.PREFIX) || "/";
