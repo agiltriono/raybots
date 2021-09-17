@@ -5,7 +5,7 @@ const i18n = require("../util/i18n");
 
 module.exports = {
   async play(song, message) {
-    const { SOUNDCLOUD_CLIENT_ID } = require("../util/Util");
+	const { SOUNDCLOUD_CLIENT_ID } = require("../util/Util");
 
     let config;
 
