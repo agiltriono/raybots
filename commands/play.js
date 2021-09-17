@@ -1,11 +1,12 @@
+require('dotenv').config();
 const i18n = require("../util/i18n");
 const { play } = require("../include/play");
 const ytdl = require("ytdl-core");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const https = require("https");
-const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID, DEFAULT_VOLUME } = require("../util/Util");
-const youtube = new YouTubeAPI(YOUTUBE_API_KEY);
+const { SOUNDCLOUD_CLIENT_ID, DEFAULT_VOLUME } = require("../util/Util");
+const youtube = new YouTubeAPI(process.env.YOUTUBE_API_KEY);
 
 module.exports = {
   name: "play",

@@ -1,7 +1,7 @@
+require('dotenv').config();
 const { MessageEmbed } = require("discord.js");
 const YouTubeAPI = require("simple-youtube-api");
-const { YOUTUBE_API_KEY } = require("../util/Util");
-const youtube = new YouTubeAPI(YOUTUBE_API_KEY);
+const youtube = new YouTubeAPI(process.env.YOUTUBE_API_KEY);
 const i18n = require("../util/i18n");
 
 module.exports = {
