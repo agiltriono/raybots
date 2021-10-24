@@ -18,9 +18,9 @@ try {
   config = null;
 }
 
-exports.DISCORD_TOKEN = process.env.DISCORD_TOKEN;
-exports.YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-exports.SOUNDCLOUD_CLIENT_ID = process.env.SOUNDCLOUD_CLIENT_ID;
+exports.DISCORD_TOKEN = config ? config.DISCORD_TOKEN : process.env.DISCORD_TOKEN;
+exports.YOUTUBE_API_KEY = config ? config.YOUTUBE_API_KEY : process.env.YOUTUBE_API_KEY;
+exports.SOUNDCLOUD_CLIENT_ID = config ? config.SOUNDCLOUD_CLIENT_ID : process.env.SOUNDCLOUD_CLIENT_ID;
 exports.PREFIX = (config ? config.PREFIX : process.env.PREFIX) || "/";
 exports.MAX_PLAYLIST_SIZE = (config ? config.MAX_PLAYLIST_SIZE : process.env.MAX_PLAYLIST_SIZE) || 10;
 exports.PRUNING = (config ? config.PRUNING : process.env.PRUNING) || false;
